@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> COMP2112 - Week 5 - Web Workers Example </title>
-    <script src="workers.js" async></script>
-</head>
+    <script type="text/javascript" src="noworker.js" async></script>
+  </head>
 
-<body>
-    <h1> Prime Number Search</h1>
-    <form>
-        <label> From: </label>
-        <input id="from" value="1">
-        <label> To: </label>
-        <input id="to" value="500000">
-        <input type="submit" value="Find Prime Numbers">
-    </form>
-    <div id="primeContainer">
-    </div>
-    <div id="status"></div>
-</body>
+  <body>
+
+    <label for="quota">Number of primes:</label>
+    <input type="text" id="quota" name="quota" value="1000000">
+
+    <button id="generate">Generate primes</button>
+    <button id="reload">Reload</button>
+
+    <textarea id="user-input" rows="5" cols="62">Try typing in here immediately after pressing "Generate primes"</textarea>
+
+    <div id="output"></div>
+
+  </body>
 
 </html>
